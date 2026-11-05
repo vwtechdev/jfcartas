@@ -48,6 +48,4 @@ python3 -m http.server 8000
 
 Acesse `http://localhost:8000`.
 
-## Configuração
-
-O link do WhatsApp é estático no `href` do botão em `index.html`; número e mensagem ficam nessa URL.
+**VWTech Dev** - Soluções em Tecnologia
