@@ -1,6 +1,5 @@
 const WHATSAPP_NUMBER = "+5547996389261";
-const WHATSAPP_MESSAGE =
-  "Olá! Gostaria de saber mais sobre uma consulta de Baralho Cigano.";
+const WHATSAPP_MESSAGE = "Olá JF Cartas!";
 
 const whatsappLink = document.querySelector("#whatsapp-link");
 
