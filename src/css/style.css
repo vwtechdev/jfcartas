@@ -198,11 +198,32 @@ body {
 .footer {
   margin-top: auto;
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   color: rgba(255, 224, 182, .75);
   font-family: Arial, sans-serif;
   font-size: 10px;
-  letter-spacing: .2em;
+  line-height: 1.5;
+}
+
+.footer p { margin: 0; }
+
+.footer-copy {
+  letter-spacing: .18em;
   text-transform: uppercase;
+}
+
+.footer-credit { letter-spacing: .08em; }
+
+.footer-credit a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  text-decoration: underline;
 }
 
 @media (max-width: 520px) {
