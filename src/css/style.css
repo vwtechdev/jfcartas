@@ -144,15 +144,25 @@ body {
   font-size: clamp(17px, 4.5vw, 23px);
   font-weight: bold;
   line-height: 1.2;
-  transition: transform .2s ease, box-shadow .2s ease;
+  animation: pulse-whatsapp-button 2.5s ease-in-out infinite;
+  transition: translate .2s ease, box-shadow .2s ease;
 }
 
 .whatsapp-button:hover {
-  transform: translateY(-2px);
+  translate: 0 -2px;
   box-shadow:
     0 0 0 5px rgba(242, 195, 107, .18),
     0 0 32px rgba(242, 195, 107, .38),
     inset 0 1px 0 rgba(255,255,255,.65);
+}
+
+@keyframes pulse-whatsapp-button {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 .whatsapp-icon {
@@ -219,5 +229,5 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .whatsapp-button { transition: none; }
+  .whatsapp-button { transition: none; animation: none; }
 }
