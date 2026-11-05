@@ -48,7 +48,7 @@ body {
 }
 
 .logo-wrap {
-  width: min(72%, 300px);
+  width: min(66%, 270px);
   aspect-ratio: 1;
   margin: clamp(12px, 3vh, 32px) auto 0;
   border: 2px solid var(--gold);
