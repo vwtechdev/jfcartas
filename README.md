@@ -7,16 +7,23 @@ Landing page estática no estilo link na bio para a **JF Cartas – Baralho Ciga
 ```
 .
 ├── index.html
+├── manifest.webmanifest
+├── robots.txt
+├── sitemap.xml
 ├── src/
 │   ├── css/
 │   │   └── style.css
 │   ├── js/
 │   │   └── script.js
 │   └── img/
+│       ├── apple-touch-icon.png
 │       ├── background.webp
 │       ├── background-mobile.webp
 │       ├── favicon.webp
-│       └── logo.webp
+│       ├── icon-192.png
+│       ├── icon-512.png
+│       ├── logo.webp
+│       └── og-image.jpg
 ├── LICENSE
 └── README.md
 ```
@@ -25,8 +32,8 @@ Landing page estática no estilo link na bio para a **JF Cartas – Baralho Ciga
 
 - **HTML5** — página única e semântica.
 - **CSS3** — variáveis, Flexbox, media queries e unidades de viewport (`svh`); sem framework.
-- **JavaScript puro** — monta o link do WhatsApp e atualiza o ano do footer.
-- **WebP** — formato das imagens.
+- **JavaScript puro** — atualiza o ano do footer.
+- **WebP/PNG/JPEG** — formatos das imagens.
 - **Fontes do sistema** — Georgia/serifada, sem carregamento externo.
 
 Sem etapa de build, gerenciador de pacotes ou dependências.
@@ -43,4 +50,4 @@ Acesse `http://localhost:8000`.
 
 ## Configuração
 
-O número e a mensagem do WhatsApp ficam nas constantes de `src/js/script.js`.
+O link do WhatsApp é estático no `href` do botão em `index.html`; número e mensagem ficam nessa URL.
